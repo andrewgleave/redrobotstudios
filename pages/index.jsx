@@ -103,10 +103,23 @@ const Home = () => {
   return (
     <div className="py-32 bg-white ">
       <Head>
-        <title>Red Robot Studios</title>
+        <title>Red Robot Studios - Andrew Gleave - Software Engineer</title>
+        <meta property="og:title" content="Red Robot Studios" />
+        <meta
+          property="og:description"
+          content="Andrew Gleave - Software Engineer"
+        />
+        <meta property="og:image" content="/images/og.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Red Robot Studios" />
+        <meta
+          name="twitter:description"
+          content="Andrew Gleave - Software Engineer"
+        />
+        <meta name="twitter:image" content="/images/og.jpg" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header className="fixed h-14 top-0 left-0 right-0 z-10  backdrop-blur-sm bg-white/60 flex items-center justify-center">
+      <header className="fixed h-14 top-0 left-0 right-0 z-10  backdrop-blur-md bg-white/90 flex items-center justify-center">
         <img src="/images/icon.svg" className="h-5" />
         <h1 className="text-xl text-gray-900 font-medium tracking-tight text-center ml-3">
           Red Robot Studios
