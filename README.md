@@ -1,3 +1,3 @@
-# Redrobotstudios.com
+# Red Robot Studios Site
 
-Repo for the public redrobotstudios.com site
+Repo for the redrobotstudios.com site using Next.js
