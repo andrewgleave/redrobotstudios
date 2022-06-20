@@ -110,14 +110,20 @@ const Home = () => {
           property="og:description"
           content="Andrew Gleave - Software Engineer"
         />
-        <meta property="og:image" content="/images/og.jpg" />
+        <meta
+          property="og:image"
+          content="https://www.redrobotstudios.com/images/og.jpg"
+        />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Red Robot Studios" />
         <meta
           name="twitter:description"
           content="Andrew Gleave - Software Engineer"
         />
-        <meta name="twitter:image" content="/images/og.jpg" />
+        <meta
+          name="twitter:image"
+          content="https://www.redrobotstudios.com/images/og.jpg"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header className="fixed h-14 top-0 left-0 right-0 z-10  backdrop-blur-md bg-white/90 flex items-center justify-center">
