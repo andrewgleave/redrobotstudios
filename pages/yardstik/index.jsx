@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-const Home = () => {
+const Privacy = () => {
   return (
     <div>
       <Head>
@@ -23,14 +23,12 @@ const Home = () => {
           WatchOS 6 and above. Yardstik is provided as is.
         </p>
         <h3>Data Collection</h3>
-
         <p>
           Yardstik neither collects nor stores any data whatsoever. Location
           data (GPS) is used solely for distance and movement calculation, and
           is neither stored on the device or transmitted to any other device or
           service.
         </p>
-
         <p>Yardstik does not communicate or initiate any network requests.</p>
         <p>
           Yardstick is an entirely on-device app, and Red Robot Studios does not
@@ -52,7 +50,10 @@ const Home = () => {
         <p>
           If you have any questions or suggestions about this Privacy Policy, do
           not hesitate to contact me at&nbsp;
-          <a href="mailto:andrew@redrobotstudios.com">
+          <a
+            className="hover:text-red-600 hover:underline"
+            href="mailto:andrew@redrobotstudios.com"
+          >
             andrew@redrobotstudios.com
           </a>
           .
@@ -62,4 +63,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Privacy;

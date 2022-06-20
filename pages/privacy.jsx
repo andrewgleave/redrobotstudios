@@ -5,7 +5,6 @@ const Privacy = () => {
     <div>
       <Head>
         <title>Red Robot Studios - Privacy Policy</title>
-        <link rel="icon" type="image/png" href="/favicon.png" />
       </Head>
       <main className="prose max-w-md xl:max-w-3xl mx-auto py-16 sm:py-24 px-4 sm:px-0">
         <img
@@ -28,7 +27,10 @@ const Privacy = () => {
         <p>
           Red Robot Studios adheres to the 2002 Data Protection Act in the Isle
           of Man. Further information on this Act can be found at the{" "}
-          <a href="https://www.gov.im/about-the-government/data-protection-gdpr-on-the-isle-of-man/">
+          <a
+            className="hover:text-red-600 hover:underline"
+            href="https://www.gov.im/about-the-government/data-protection-gdpr-on-the-isle-of-man/"
+          >
             Isle of Man Data Protection&nbsp;Supervisor
           </a>
           .
@@ -281,7 +283,10 @@ const Privacy = () => {
         <p>
           If you have any additional questions or concerns about this Privacy
           Policy, please feel free to contact me at&nbsp;
-          <a href="mailto:andrew@redrobotstudios.com">
+          <a
+            className="hover:text-red-600 hover:underline"
+            href="mailto:andrew@redrobotstudios.com"
+          >
             andrew@redrobotstudios.com
           </a>
           .
