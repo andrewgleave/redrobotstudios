@@ -74,7 +74,7 @@ const Projects = [
     description: "Create and share rich online presentations (retired)",
     image: { src: "/images/slidecraft.svg", className: "w-56" },
     background: makeGradient("#132557", "#0f172a"),
-    link: "https://vimeo.com/slidecraft",
+    link: "https://vimeo.com/240399357",
     keywords: ["Go", "React", "Redis", "Postgres"],
   },
   {
@@ -99,6 +99,12 @@ const Home = () => {
     <div className="py-32 bg-white">
       <Head>
         <title>Red Robot Studios - Andrew Gleave - Software Engineer</title>
+        <meta name="description" content="Andrew Gleave - Software Engineer" />
+        <meta
+          name="keywords"
+          content="Andrew Gleave, Software Engineer, Red Robot Studios"
+        />
+        <meta name="author" content="Andrew Gleave" />
         <meta property="og:title" content="Red Robot Studios" />
         <meta
           property="og:description"
@@ -149,7 +155,7 @@ const Home = () => {
             David Deutsch.
           </p>
         </div>
-        {Projects.map((project, index) => (
+        {Projects.map((project) => (
           <div
             key={project.name}
             className="col-span-2 xl:col-span-1 shadow-sm rounded-xl  overflow-hidden bg-gray-50 text-gray-900 mt-4"
@@ -183,10 +189,11 @@ const Home = () => {
         ))}
         <div className="mt-4">
           <ul className="col-span-2 xl:col-span-1 text-base">
-            {Links.map((link, index) => (
+            {Links.map((link) => (
               <li key={link.name} className="text-gray-900">
                 <a
                   href={link.link}
+                  rel="noopener noreferrer"
                   className="hover:text-red-600 hover:underline"
                 >
                   {link.name}
