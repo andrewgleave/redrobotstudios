@@ -4,9 +4,9 @@ const Error404 = () => {
   return (
     <div>
       <Head>
-        <title>Red Robot Studios - Privacy Policy</title>
+        <title>Red Robot Studios - Not found</title>
       </Head>
-      <main className="min-h-screen flex items-center justify-center">
+      <main className="min-h-screen flex items-center justify-center px-4 sm:px-0">
         <div className="flex flex-col items-center">
           <img
             src="/images/icon.svg"

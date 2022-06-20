@@ -6,7 +6,7 @@ const Privacy = () => {
       <Head>
         <title>Red Robot Studios - Privacy Policy</title>
       </Head>
-      <main className="prose max-w-md xl:max-w-3xl mx-auto py-24">
+      <main className="prose max-w-md xl:max-w-3xl mx-auto py-16 sm:py-24 px-4 sm:px-0">
         <img
           src="/images/icon.svg"
           className="w-32 h-32"

@@ -6,7 +6,7 @@ const Home = () => {
       <Head>
         <title>Yardstik - Privacy Policy</title>
       </Head>
-      <main className="prose max-w-md xl:max-w-3xl mx-auto py-24">
+      <main className="prose max-w-md xl:max-w-3xl mx-auto py-16 sm:py-24 px-4 sm:px-0">
         <div className="[background-color:#fde047] w-40 h-40 rounded-full flex items-center justify-center mb-8">
           <img
             class="w-24 h-24"
