@@ -7,13 +7,15 @@ const Privacy = () => {
         <title>Red Robot Studios - Privacy Policy</title>
       </Head>
       <main className="prose max-w-md xl:max-w-3xl mx-auto py-16 sm:py-24 px-4 sm:px-0">
-        <img
-          src="/images/icon.svg"
-          className="w-32 h-32"
-          width="128"
-          height="128"
-          alt="Logo"
-        />
+        <a href="/">
+          <img
+            src="/images/icon.svg"
+            className="w-32 h-32"
+            width="128"
+            height="128"
+            alt="Logo"
+          />
+        </a>
         <h1>Privacy Policy</h1>
         <p>
           At Red Robot Studios we recognise that your privacy is important. This

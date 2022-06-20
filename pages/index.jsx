@@ -203,7 +203,6 @@ const Home = () => {
               className="w-full h-72 bg-white flex items-center justify-center group cursor-pointer"
             >
               <img
-                loading="lazy"
                 src={project.image.src}
                 width={project.image.width}
                 height={project.image.height}
