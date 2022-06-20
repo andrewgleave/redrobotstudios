@@ -3,19 +3,16 @@ import Head from "next/head";
 import { colord } from "colord";
 
 const makeGradient = (
-  topColor,
-  bottomColor = null,
-  degrees = 180,
+  top,
+  bottom = null,
+  deg = 180,
   rotation = 5,
   darken = 0.1
 ) => {
-  if (bottomColor === null) {
-    bottomColor = colord(topColor)
-      .darken(darken)
-      .rotate(rotation)
-      .toRgbString();
+  if (bottom === null) {
+    bottom = colord(top).darken(darken).rotate(rotation).toRgbString();
   }
-  return `${topColor} linear-gradient(${degrees}deg, ${topColor} 0%, ${bottomColor} 100%)`;
+  return `${top} linear-gradient(${deg}deg, ${top} 0%, ${bottom} 100%)`;
 };
 
 const Projects = [
@@ -34,10 +31,7 @@ const Projects = [
     description:
       "Night on Call helps evaluate students' readiness for internship",
     link: "https://nightoncall.mcw.edu",
-    background: makeGradient(
-      "#14b8a6",
-      colord("#14b8a6").rotate(10).darken(0.05).toHex()
-    ),
+    background: makeGradient("#14b8a6", "#129aa1"),
     image: { src: "/images/noc.svg", className: "w-22 drop-shadow-sm" },
     keywords: ["Python", "Django", "OpenAI", "Tailwind", "Docker"],
   },
@@ -63,7 +57,7 @@ const Projects = [
       "Simple WatchOS app to measure distances on Apple Watch at a glance",
     image: { src: "/images/yardstik-watch.png", className: "h-60" },
     link: "https://apps.apple.com/gb/app/yardstik/id1491400979",
-    background: makeGradient("#fee979", colord("#fde047").rotate(-5).toHex()),
+    background: makeGradient("#fee979", "#fdd047"),
     keywords: ["Swift", "SwiftUI"],
   },
   {
@@ -97,11 +91,12 @@ const Links = [
   { name: "Github", link: "https://github.com/andrewgleave" },
   { name: "Twitter", link: "https://twitter.com/andrewgleave" },
   { name: "Email", link: "mailto:andrew@redrobotstudios.com?subject=Hello" },
+  { name: "Privacy", link: "/privacy" },
 ];
 
 const Home = () => {
   return (
-    <div className="py-32 bg-white ">
+    <div className="py-32 bg-white">
       <Head>
         <title>Red Robot Studios - Andrew Gleave - Software Engineer</title>
         <meta property="og:title" content="Red Robot Studios" />
@@ -120,7 +115,13 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header className="fixed h-14 top-0 left-0 right-0 z-10  backdrop-blur-md bg-white/90 flex items-center justify-center">
-        <img src="/images/icon.svg" className="h-5" />
+        <img
+          src="/images/icon.svg"
+          className="h-6"
+          height={24}
+          width={24}
+          alt="Logo"
+        />
         <h1 className="text-xl text-gray-900 font-medium tracking-tight text-center ml-3">
           Red Robot Studios
         </h1>
@@ -161,6 +162,7 @@ const Home = () => {
               <img
                 src={project.image.src}
                 className={`${project.image.className}`}
+                alt={project.name}
               />
             </a>
             <div className="p-6">
