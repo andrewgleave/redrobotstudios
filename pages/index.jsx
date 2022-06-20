@@ -22,7 +22,11 @@ const Projects = [
       "Create simple, clean job ad cards for sharing and social media",
     image: "/images/blank.svg",
     link: "https://jobpo.st",
-    image: { src: "/images/jobpost.svg", className: "w-44" },
+    image: {
+      src: "/images/jobpost.svg",
+      width: 176,
+      height: 49,
+    },
     background: makeGradient("#374151"),
     keywords: ["Next.js", "React", "Tailwind", "Framer"],
   },
@@ -32,13 +36,21 @@ const Projects = [
       "Night on Call helps evaluate students' readiness for internship",
     link: "https://nightoncall.mcw.edu",
     background: makeGradient("#14b8a6", "#129aa1"),
-    image: { src: "/images/noc.svg", className: "w-22 drop-shadow-sm" },
+    image: {
+      src: "/images/noc.svg",
+      width: 76,
+      height: 100,
+    },
     keywords: ["Python", "Django", "OpenAI", "Tailwind", "Docker"],
   },
   {
     name: "SnipRSS",
     description: "For all the great web content that doesn't have a feed",
-    image: { src: "/images/snip.svg", className: "w-52" },
+    image: {
+      src: "/images/snip.svg",
+      width: 208,
+      height: 57,
+    },
     link: "https://sniprss.com",
     background: makeGradient("#3b82f6"),
     keywords: ["Go", "Browser Extensions", "SQLite", "Docker"],
@@ -46,7 +58,11 @@ const Projects = [
   {
     name: "FlipRSS",
     description: "Personalised email newsletters powered by RSS and Mailchimp",
-    image: { src: "/images/flip.svg", className: "w-52" },
+    image: {
+      src: "/images/flip.svg",
+      width: 208,
+      height: 68,
+    },
     link: "https://fliprss.com",
     background: makeGradient("#2f84ba", "#ac0096"),
     keywords: ["Python", "Django", "React", "Tailwind"],
@@ -55,7 +71,11 @@ const Projects = [
     name: "Yardstik",
     description:
       "Simple WatchOS app to measure distances on Apple Watch at a glance",
-    image: { src: "/images/yardstik-watch.png", className: "h-60" },
+    image: {
+      src: "/images/yardstik-watch.png",
+      width: 143,
+      height: 240,
+    },
     link: "https://apps.apple.com/gb/app/yardstik/id1491400979",
     background: makeGradient("#fee979", "#fdd047"),
     keywords: ["Swift", "SwiftUI"],
@@ -64,7 +84,11 @@ const Projects = [
     name: "University of British Columbia",
     description:
       "EDI, MDI and ECHEQ help evaluate child development across Canada",
-    image: { src: "/images/ubc.svg", className: "w-32" },
+    image: {
+      src: "/images/ubc.svg",
+      width: 128,
+      height: 128,
+    },
     background: makeGradient("#1e40af"),
     link: "http://earlylearning.ubc.ca/mdi/",
     keywords: ["Python", "Django", "Redis", "Postgres"],
@@ -72,7 +96,11 @@ const Projects = [
   {
     name: "Slidecraft",
     description: "Create and share rich online presentations (retired)",
-    image: { src: "/images/slidecraft.svg", className: "w-56" },
+    image: {
+      src: "/images/slidecraft.svg",
+      width: 224,
+      height: 43,
+    },
     background: makeGradient("#132557", "#0f172a"),
     link: "https://vimeo.com/240399357",
     keywords: ["Go", "React", "Redis", "Postgres"],
@@ -80,7 +108,11 @@ const Projects = [
   {
     name: "Djangogigs",
     description: "Django and python jobs for developers since 2008",
-    image: { src: "/images/djangogigs.svg", className: "w-28" },
+    image: {
+      src: "/images/djangogigs.svg",
+      width: 112,
+      height: 98,
+    },
     background: makeGradient("#a3e635"),
     link: "https://djangogigs.com",
     keywords: ["Python", "Django", "Redis", "Postgres"],
@@ -141,7 +173,7 @@ const Home = () => {
 
       <main className="max-w-md xl:max-w-3xl mx-auto grid grid-cols-2 gap-8 px-4">
         <div className="col-span-2 mb-8">
-          <h3 className="font-semibold">Red Robot Studios is Andrew Gleave</h3>
+          <h2 className="font-semibold">Red Robot Studios is Andrew Gleave</h2>
           <p className="mt-4">
             I am a software engineer with a passion for building useful tools,
             products and services.
@@ -172,13 +204,15 @@ const Home = () => {
               className="w-full h-72 bg-white flex items-center justify-center group cursor-pointer"
             >
               <img
+                loading="lazy"
                 src={project.image.src}
-                className={`${project.image.className}`}
+                width={project.image.width}
+                height={project.image.height}
                 alt={project.name}
               />
             </a>
             <div className="p-6">
-              <h2 className="text-xl font-medium">{project.name}</h2>
+              <h3 className="text-xl font-medium">{project.name}</h3>
               <p className="text-base mt-2">{project.description}</p>
               <p className="text-sm mt-3 space-x-1 text-gray-900">
                 {project.keywords.map((keyword, index) => (
