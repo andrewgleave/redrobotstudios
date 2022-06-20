@@ -5,6 +5,7 @@ const Error404 = () => {
     <div>
       <Head>
         <title>Red Robot Studios - Not found</title>
+        <link rel="icon" type="image/png" href="/favicon.png" />
       </Head>
       <main className="min-h-screen flex items-center justify-center px-4 sm:px-0">
         <div className="flex flex-col items-center">

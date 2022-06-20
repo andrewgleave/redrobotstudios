@@ -124,7 +124,7 @@ const Home = () => {
           name="twitter:image"
           content="https://www.redrobotstudios.com/images/og.jpg"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
       </Head>
       <header className="fixed h-14 top-0 left-0 right-0 z-10  backdrop-blur-md bg-white/90 flex items-center justify-center">
         <img
