@@ -17,18 +17,18 @@ const makeGradient = (
 
 const Projects = [
   {
-    name: "Jobpo.st",
+    name: "Ramble Notes (TestFlight)",
     description:
-      "Create simple, clean job ad cards for sharing and social media",
-    image: "/images/blank.svg",
-    link: "https://jobpo.st",
+      "Ramble Notes integrates voice notes, AI-powered transcription, and smart summarization to enhance the way understand your thoughts.",
+    image: "/images/rabble-notes.svg",
+    link: "https://testflight.apple.com/join/RNDXC5aS",
     image: {
-      src: "/images/jobpost.svg",
+      src: "/images/ramble-notes.svg",
       width: 176,
       height: 49,
     },
-    background: makeGradient("#374151"),
-    keywords: ["Next.js", "React", "Tailwind", "Framer"],
+    background: "#ffffff",
+    keywords: ["SwiftUI", "Python", "GPT-4"],
   },
   {
     name: "MCW / Kern Institute",
@@ -79,6 +79,20 @@ const Projects = [
     link: "https://apps.apple.com/gb/app/yardstik/id1491400979",
     background: makeGradient("#fee979", "#fdd047"),
     keywords: ["Swift", "SwiftUI"],
+  },
+  {
+    name: "Jobpo.st",
+    description:
+      "Create simple, clean job ad cards for sharing and social media",
+    image: "/images/blank.svg",
+    link: "https://jobpo.st",
+    image: {
+      src: "/images/jobpost.svg",
+      width: 176,
+      height: 49,
+    },
+    background: makeGradient("#374151"),
+    keywords: ["Next.js", "React", "Tailwind", "Framer"],
   },
   {
     name: "University of British Columbia",
@@ -195,13 +209,11 @@ const Home = () => {
         {Projects.map((project) => (
           <div
             key={project.name}
-            className="col-span-2 xl:col-span-1 shadow-sm rounded-xl  overflow-hidden bg-gray-50 text-gray-900 mt-4"
-          >
+            className="col-span-2 xl:col-span-1 shadow-sm rounded-xl  overflow-hidden bg-gray-50 text-gray-900 mt-4">
             <a
               href={project.link}
               style={{ background: project.background }}
-              className="w-full h-72 bg-white flex items-center justify-center group cursor-pointer"
-            >
+              className="w-full h-72 bg-white flex items-center justify-center group cursor-pointer">
               <img
                 src={project.image.src}
                 width={project.image.width}
@@ -232,8 +244,7 @@ const Home = () => {
                 <a
                   href={link.link}
                   rel="noopener noreferrer"
-                  className="hover:text-red-600 hover:underline"
-                >
+                  className="hover:text-red-600 hover:underline">
                   {link.name}
                 </a>
               </li>
