@@ -33,7 +33,7 @@ const Projects = [
   {
     name: "MCW / Kern Institute",
     description:
-      "Night on Call helps evaluate students' readiness for internship",
+      "Night on Call helps evaluate students' readiness for internship and residency through simulated patient encounters and AI-assisted feedback",
     link: "https://nightoncall.mcw.edu",
     background: makeGradient("#14b8a6", "#129aa1"),
     image: {

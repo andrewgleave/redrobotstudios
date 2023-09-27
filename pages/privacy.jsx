@@ -7,15 +7,6 @@ const Privacy = () => {
         <title>Red Robot Studios - Privacy Policy</title>
       </Head>
       <main className="prose max-w-md xl:max-w-3xl mx-auto py-16 sm:py-24 px-4 sm:px-0">
-        <a href="/">
-          <img
-            src="/images/icon.svg"
-            className="w-32 h-32"
-            width="128"
-            height="128"
-            alt="Logo"
-          />
-        </a>
         <h1>Privacy Policy</h1>
         <p>
           At Red Robot Studios we recognise that your privacy is important. This
@@ -31,8 +22,7 @@ const Privacy = () => {
           of Man. Further information on this Act can be found at the{" "}
           <a
             className="hover:text-red-600 hover:underline"
-            href="https://www.gov.im/about-the-government/data-protection-gdpr-on-the-isle-of-man/"
-          >
+            href="https://www.gov.im/about-the-government/data-protection-gdpr-on-the-isle-of-man/">
             Isle of Man Data Protection&nbsp;Supervisor
           </a>
           .
@@ -287,8 +277,7 @@ const Privacy = () => {
           Policy, please feel free to contact me at&nbsp;
           <a
             className="hover:text-red-600 hover:underline"
-            href="mailto:andrew@redrobotstudios.com"
-          >
+            href="mailto:andrew@redrobotstudios.com">
             andrew@redrobotstudios.com
           </a>
           .

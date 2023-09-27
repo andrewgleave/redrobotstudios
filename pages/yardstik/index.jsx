@@ -6,6 +6,20 @@ const Privacy = () => {
       <Head>
         <title>Yardstik - Privacy Policy</title>
       </Head>
+      <header className="fixed h-14 top-0 left-0 right-0 z-10  backdrop-blur-md bg-white/90 flex items-center justify-center">
+        <a className="flex items-center justify-center" href="/">
+          <img
+            src="/images/icon.svg"
+            className="h-6"
+            height={24}
+            width={24}
+            alt="Logo"
+          />
+          <h1 className="text-xl text-gray-900 font-medium tracking-tight text-center ml-3">
+            Red Robot Studios
+          </h1>
+        </a>
+      </header>
       <main className="prose max-w-md xl:max-w-3xl mx-auto py-16 sm:py-24 px-4 sm:px-0">
         <div className="[background-color:#fde047] w-40 h-40 rounded-full flex items-center justify-center mb-8">
           <img
@@ -52,8 +66,7 @@ const Privacy = () => {
           not hesitate to contact me at&nbsp;
           <a
             className="hover:text-red-600 hover:underline"
-            href="mailto:andrew@redrobotstudios.com"
-          >
+            href="mailto:andrew@redrobotstudios.com">
             andrew@redrobotstudios.com
           </a>
           .
