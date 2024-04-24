@@ -31,7 +31,7 @@ const Projects = [
     keywords: ["SwiftUI", "Python", "GPT-4"],
   },
   {
-    name: "MCW / Kern Institute",
+    name: "MCW",
     description:
       "Night on Call helps evaluate students' readiness for internship and residency through simulated patient encounters and AI-assisted feedback",
     link: "https://nightoncall.mcw.edu",
