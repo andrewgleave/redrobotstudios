@@ -17,6 +17,20 @@ const makeGradient = (
 
 const Projects = [
   {
+    name: "Lumatta",
+    description:
+      "Display your favorite quotes as beautiful Home Screen widgets. Import from X or add manually. All synced with iCloud.",
+    image: "/images/lumatta.svg",
+    link: "https://apps.apple.com/gb/app/lumatta/id6740705796",
+    image: {
+      src: "/images/lumatta.png",
+      width: 704,
+      height: 576,
+    },
+    background: "#ffffff",
+    keywords: ["SwiftUI", "Go"],
+  },
+  {
     name: "Ramble Notes (TestFlight)",
     description:
       "Ramble Notes integrates voice notes, AI-powered transcription, and smart summarization to enhance the way understand your thoughts.",
@@ -27,8 +41,8 @@ const Projects = [
       width: 176,
       height: 49,
     },
-    background: "#ffffff",
-    keywords: ["SwiftUI", "Python", "GPT-4"],
+    background: makeGradient("#f8fafc", "#e2e8f0", 180),
+    keywords: ["SwiftUI", "Python", "GPT-4o"],
   },
   {
     name: "MCW",
@@ -209,11 +223,13 @@ const Home = () => {
         {Projects.map((project) => (
           <div
             key={project.name}
-            className="col-span-2 xl:col-span-1 shadow-sm rounded-xl  overflow-hidden bg-gray-50 text-gray-900 mt-4">
+            className="col-span-2 xl:col-span-1 shadow-sm rounded-xl  overflow-hidden bg-slate-50 text-slate-900 mt-4"
+          >
             <a
               href={project.link}
               style={{ background: project.background }}
-              className="w-full h-72 bg-white flex items-center justify-center group cursor-pointer">
+              className="w-full h-72 bg-white flex items-center justify-center group cursor-pointer"
+            >
               <img
                 src={project.image.src}
                 width={project.image.width}
@@ -244,7 +260,8 @@ const Home = () => {
                 <a
                   href={link.link}
                   rel="noopener noreferrer"
-                  className="hover:text-red-600 hover:underline">
+                  className="hover:text-red-600 hover:underline"
+                >
                   {link.name}
                 </a>
               </li>
