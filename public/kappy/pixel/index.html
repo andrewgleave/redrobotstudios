@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kappy Safari</title>
+    <link rel="icon" href="data:," />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" />
+    <script type="module" crossorigin src="./assets/index-CTvfDdCh.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-NvOwvPn5.css">
+  </head>
+  <body>
+    <div id="game"></div>
+
+    <section id="start" class="start" aria-labelledby="start-title">
+      <div class="start-panel paper">
+        <h1 id="start-title">Kappy Safari</h1>
+        <p>Shh... the capybaras are shy. Stay quiet and they will come out.</p>
+        <button id="start-button" class="command">Start</button>
+        <p class="note">The browser will ask to use the microphone. Nothing is recorded.</p>
+        <p id="start-error" class="error" role="alert" hidden></p>
+      </div>
+    </section>
+
+    <div id="meter" class="meter" hidden><div class="fill"></div><div class="line"></div></div>
+    <div id="buttons" class="buttons" hidden>
+      <button id="pause-button" class="command">Pause</button>
+      <button id="places-button" class="command">Places</button>
+      <button id="found-button" class="command"><span class="found-label"><span class="found-prefix">Capybaras </span>found: <span id="found-count"></span></span></button>
+    </div>
+    <div id="toast" class="toast paper" role="status" hidden></div>
+    <div id="paused" class="paused" hidden>Paused</div>
+
+    <section id="collection" class="overlay" hidden>
+      <div class="panel paper">
+        <h2>Capybaras found</h2>
+        <div class="cards"></div>
+        <button class="close command">Close</button>
+      </div>
+    </section>
+
+    <section id="places" class="overlay" hidden>
+      <div class="panel paper">
+        <h2>Places</h2>
+        <div class="cards wide"></div>
+        <button class="close command">Close</button>
+      </div>
+    </section>
+
+  </body>
+</html>
