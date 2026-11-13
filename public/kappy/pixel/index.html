@@ -6,9 +6,10 @@
     <title>Kappy Safari</title>
     <link rel="icon" href="data:," />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" />
-    <script type="module" crossorigin src="./assets/index-CTvfDdCh.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-NvOwvPn5.css">
+    <!-- loads without blocking the page, so a school filter that drops the request can't hold up the start screen -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" media="print" onload="this.media='all'" />
+    <script type="module" crossorigin src="./assets/index-BgW1aYJ1.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CZmGcMNh.css">
   </head>
   <body>
     <div id="game"></div>
